@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<style>
+        body.dark .footer__head {
+            background: #131212
+        }
+
+        @media only screen and (max-width: 768px) {
+            body.dark .footer__head {
+                padding: 40px
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            body.dark .footer__head {
+                padding: 30px
+            }
+        }
+        .footer {
+            padding-top: 70px;
+            background: #161d25
+        }
+
+        .footer .row .col {
+            flex-grow: 1
+        }
+
+        .footer .footer__inner {
+            padding: 60px 0;
+            margin: 0 60px 0;
+            background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 112, 255, 0.7), rgba(0, 112, 255, 0.7) 2px, transparent 2px, transparent 100%);
+            background-image: -moz-repeating-radial-gradient(center center, rgba(0, 112, 255, 0.7), rgba(0, 112, 255, 0.7) 2px, transparent 2px, transparent 100%);
+            background-image: -ms-repeating-radial-gradient(center center, rgba(0, 112, 255, 0.7), rgba(0, 112, 255, 0.7) 2px, transparent 2px, transparent 100%);
+            background-image: repeating-radial-gradient(center center, rgba(0, 112, 255, 0.7), rgba(0, 112, 255, 0.7) 2px, transparent 2px, transparent 100%);
+            -webkit-background-size: 15px 15px;
+            -moz-background-size: 15px 15px;
+            background-size: 15px 15px
+        }
+
+        .footer .footer__head {
+            margin: 0 -60px;
+            padding: 60px;
+            background: #161d25;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07)
+        }
+
+        .footer .footer__content {
+            padding: 60px 0
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .footer .row .col:last-child>.widget {
+                margin-bottom: 0
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .footer {
+                padding-top: 60px
+            }
+
+            .footer .footer__inner {
+                padding: 0;
+                margin: 0;
+                background-image: none
+            }
+
+            .footer .footer__head {
+                margin: 0;
+                padding: 0;
+                box-shadow: none
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            .footer {
+                padding-top: 50px
+            }
+        }
+            .social {
+            text-align: center;
+            margin-left: 510px;
+            margin-top: 20px;
+           
+        }
+
+        .social .social__list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            
+        }
+
+        .social .social__item {
+            display: inline-block;
+            margin-left: 10px;
+       ; 
+        }
+
+        .social .social__item:first-child {
+            margin-left: 0
+        }
+
+        .social .social__link {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            
+            font-size: 19px;
+            line-height: 45px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #000;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0);
+            transition: all 0.3s ease;
+            overflow: hidden
+        }
+
+        .social .social__link::after {
+            content: "";
+            position: absolute;
+            transform: translate(0, 45px);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #add8e6;
+            transition: all 0.3s ease
+        }
+
+        .social .social__link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.17);
+            color: #000
+        }
+
+        .social .social__link:hover::after {
+            transform: translate(0) scale(1.2)
+        }
+
+        .social .social__link i {
+            z-index: 1;
+            display: inline-block;
+            padding: 2px;
+            margin: auto
+        }
+
+        @media only screen and (max-width: 768px) {
+            .social {
+                margin: 50px 0 0;
+                text-align: left
+            }
+
+            .social .social__list {
+                justify-content: start
+            }
+        }
+</style>
+</head>
+<body>
+<div class="social">
+    <ul class="social__list list-reset">
+
+        <li class="social__item">
+            <a class="social__link" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="social icon"><span class="iconify" data-icon="fa-brands:github-alt" data-inline="false"></span></a>
+        </li>
+
+        <li class="social__item">
+            <a class="social__link" href="https://github.com/" target="_blank" rel="noopener" aria-label="social icon"><span class="iconify" data-icon="simple-icons:tableau" data-inline="false"></span></span></a>
+        </li>
+
+        <li class="social__item">
+            <a class="social__link" href="https://youtube.com/" target="_blank" rel="noopener" aria-label="social icon">
+                <span class="iconify" data-icon="brandico:linkedin-rect" data-inline="false"></span>
+            </a>
+        </li>
+
+        <li class="social__item">
+            <a class="social__link" href="https://pinterest.com/" target="_blank" rel="noopener"><span class="iconify" data-icon="teenyicons:twitter-solid" data-inline="false"></span></a>
+        </li>
+
+        <li class="social__item">
+            <a style="--ionicon-stroke-width: 64px;" class="social__link" href="https://codepen.io/" target="_blank" rel="noopener">
+                <span class="iconify" data-icon="simple-icons:gmail" data-inline="false"></span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
